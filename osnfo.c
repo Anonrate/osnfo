@@ -35,15 +35,12 @@
 
 #ifdef	DEV
 
-#define	__ASDFTEST__ "SHITFUCK"
-
-const char *test = __ASDFTEST__;
-
 int
 main(void)
 {
-
-	printf("%s\n", test);
+#ifdef	OSID
+	printf("%s\t%d\n", getosid());
+#endif	/* OSID */
 	return 0;
 }
 #endif	/* DEV */

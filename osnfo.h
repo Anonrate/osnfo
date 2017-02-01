@@ -82,7 +82,7 @@ osnfo_s {
 
 /**
  * \brief	operating system information
- *
+ *j
  * Retrieves information on the current operating system.
  */
 osnfo_t
