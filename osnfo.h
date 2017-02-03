@@ -30,16 +30,16 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define	DEBUG_OUT(fmt, ...)													\
-	{																		\
-		if (DEBUG)															\
-		{																	\
+#define	DEBUG_OUT(fmt, ...)																					\
+	{																																	\
+		if (DEBUG)																											\
+		{																																\
 			fprintf(stdout, "%s:%s:%d\t", __FILE__, __func__, __LINE__);	\
-			fprintf(stdout, (fmt), __VA_ARGS__);							\
-		}																	\
+			fprintf(stdout, (fmt), __VA_ARGS__);													\
+		}																																\
 	}
 
-/* {{{1 Android				*/
+/* {{{1 Android							*/
 #ifdef	__ANDROID__
 #ifndef	OSID
 #define	OSID	"ANDROID"
@@ -49,16 +49,16 @@
 #define	API_LVL	__ANDROID_API__
 #define	OSVER	getosverx()
 #endif	/* __ANDROID_API__	*/
-#endif	/* OSID				*/
-#endif	/* __ANDROID__		*/
-/* }}}1 Android				*/
+#endif	/* OSID							*/
+#endif	/* __ANDROID__			*/
+/* }}}1 Android							*/
 
 /* {{{1 Amdahl UTS	*/
 #ifdef	UTS
 #ifndef	OSID
 #define	OSID	"Amdahl UTS"
-#endif	/* OSID		*/
-#endif	/* UTS		*/
+#endif	/* OSID			*/
+#endif	/* UTS			*/
 /* }}}1 Amdahl UTS	*/
 
 /* {{{1 AmigaOS					*/
