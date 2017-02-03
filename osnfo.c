@@ -25,7 +25,7 @@
  * 	\endparblock
  */
 
-#define	DEBUG	
+#define	DEBUG	1
 #define	DEV
 
 #include <stdio.h>
@@ -34,10 +34,12 @@
 #include "osnfo.h"
 
 #ifdef	DEV
-
 int
 main(void)
 {
+	
+	
+DEBUG_OUT("%s", "NIGGER");
 #ifdef	OSID
 	printf("%s\t%d\n", getosid());
 #endif	/* OSID */
