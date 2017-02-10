@@ -38,10 +38,8 @@ int
 main(void)
 {
 	
-	
-DEBUG_OUT("%s", "NIGGER");
 #ifdef	OSID
-	printf("%s\t%d\n", getosid());
+	printf("%s\n", getosid());
 #endif	/* OSID */
 	return 0;
 }
