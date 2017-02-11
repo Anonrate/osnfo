@@ -1,7 +1,7 @@
 /**
  * @file  osnfo.h
  * @brief osnfo.h
- * @version v.1
+ * @version v.3
  * @date  01/28/2017 21:16:40
  * @author  Anonrate
  * @copyright 
@@ -546,10 +546,10 @@
 /*
  * SVR4 Environment
  */
-#if (defined __sysv__             \
-        || defined __SVR4         \
-        || defined __svr4__       \
-        || defined _SYSTYPE_SVR4)
+#if (defined __sysv__          \
+     || defined __SVR4         \
+     || defined __svr4__       \
+     || defined _SYSTYPE_SVR4)
 #ifndef OSID
 /**
  * \ref doxsssvrfenv
@@ -585,8 +585,8 @@
 /*
  * Tru64 (OSF/1)
  */
-#if (defined __osf__      \
-        || defined __osf)
+#if (defined __osf__    \
+     || defined __osf)
 #ifndef OSID
 /**
  * \ref doxsstrusfosfo
@@ -598,11 +598,11 @@
 /*
  * Ultrix
  */
-#if (defined ultrix           \
-        || defined __ultrix   \
-        || defined __ultrix__ \
-        || (defined unix      \
-            && wax))
+#if (defined ultrix        \
+     || defined __ultrix   \
+     || defined __ultrix__ \
+     || (defined unix      \
+         && wax))
 #ifndef OSID
 /**
  * \ref doxssultrix
@@ -614,8 +614,8 @@
 /*
  * UNICOS/mp
  */
-#if (defined _CRAY            \
-        || defined __crayx1)
+#if (defined _CRAY        \
+     || defined __crayx1)
 #ifndef OSID
 /**
  * \ref doxssunicosmp
@@ -627,8 +627,8 @@
 /*
  * UNIX Environment
  */
-#if (defined(__unix__)      \
-        || defined(__unix))
+#if (defined(__unix__)    \
+     || defined(__unix))
 #ifndef OSID
 /**
  * \ref doxssunixenv
@@ -640,8 +640,8 @@
 /*
  * UnixWare
  */
-#if (defined sco        \
-        || _UNIXWARE7)
+#if (defined sco    \
+     || _UNIXWARE7)
 #ifndef OSID
 /**
  * \ref doxssunixware
