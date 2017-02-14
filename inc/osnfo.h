@@ -38,6 +38,13 @@
 
 #ifdef  SPRTD_OS
 
+/**
+ * @brief   get operating system name
+ * @details Gets the name of the current operating system.
+ * @return  Returns the name of the current operating system.
+ */
+char*
+getosname(void) { return getsysname(); }
 
 #endif  /* SPRTD_OS   */
 #endif  /* OSNFO_H    */
